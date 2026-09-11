@@ -19,10 +19,10 @@ export default function Header() {
         </NavLink>
 
         <nav className="main-nav">
-          <NavLink classList={(isActive) => `nav-link${ isActive ? " active" : ""}`} to="/">Главная</NavLink>
-          <NavLink classList={(isActive) => `nav-link${ isActive ? " active" : ""}`} to="/catalog">Каталог</NavLink>
-          <NavLink classList={(isActive) => `nav-link${ isActive ? " active" : ""}`} to="/about">О нас</NavLink>
-          <NavLink classList={(isActive) => `nav-link${ isActive ? " active" : ""}`} to="/contacts">Контакты</NavLink>
+          <NavLink className={({isActive}) => `nav-link${ isActive ? " active" : ""}`} to="/">Главная</NavLink>
+          <NavLink className={({isActive}) => `nav-link${ isActive ? " active" : ""}`} to="/catalog">Каталог</NavLink>
+          <NavLink className={({isActive}) => `nav-link${ isActive ? " active" : ""}`} to="/about">О нас</NavLink>
+          <NavLink className={({isActive}) => `nav-link${ isActive ? " active" : ""}`} to="/contacts">Контакты</NavLink>
         </nav>
 
         <div className="header-search">
